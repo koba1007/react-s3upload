@@ -27,7 +27,7 @@ const SignedUploadDragAndDrop = () => {
 
     let { file } = files;
     let { name, type } = file;
-    let gateway = '<YOUR APIGATEWAY ENDPOINT URL>';
+    let gateway = 'https://kcpfrlbb2i.execute-api.ap-northeast-1.amazonaws.com/Prod/';
     
     const response = await axios(
       `${gateway}?` +

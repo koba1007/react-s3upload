@@ -11,9 +11,11 @@ jobs:
         uses: actions/checkout@master
       
       - name: Install Dependencies
+        working-directory: frontend
         run: yarn
 
       - name: Buil
+        working-directory: frontend
         run: yarn build
 
       - name: Deploy
